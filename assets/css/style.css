@@ -21,12 +21,33 @@ body {
   font-size: 14px;
 }
 
+.text-dark-custom {
+  color: #141414;
+}
+.text-primary-custom {
+  color: #1661ad;
+}
+.custom-divider {
+  height: 35px;
+  border-left: 1px solid #bfbfbf;
+  margin: 0 18px;
+}
+
 .info-bar {
   background: #f6fbff;
   border-bottom: 3px solid rgba(9, 66, 110, 0.08);
   padding: 8px 12px;
   font-size: 14px;
 }
+.img-flag {
+  width: 22px;
+  height: 15px;
+}
+.lifewave-divider {
+  height: 35px;
+  border-color: #bfbfbf !important;
+}
+
 
 html,
 body {
@@ -38,23 +59,7 @@ body {
   overflow-x: hidden !important;
 }
 
-/* .hero-carousel {
-  position: relative;
-  margin-top: -50px;          
-  width: 100vw;           
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;     
-  overflow: hidden;
-}
 
-.carousel-item {
-  height: 450px;          
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 0;          
-} */
 
 .hero-carousel {
   position: relative;
@@ -70,6 +75,23 @@ body {
   height: 70vh;
 }
 
+
+
+
+
+.carousel-item {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
 .hero-carousel .carousel-item {
   background-size: cover;
   background-position: center;
@@ -84,6 +106,7 @@ footer {
 }
 
 /* === Arrows === */
+
 .carousel-control-custom {
   width: 70px;
   height: 70px;
@@ -127,32 +150,10 @@ footer {
   transform: rotate(-135deg);
 }
 
+
+
+
 /* === Indicators === */
-/* .carousel-indicators {
-      position: absolute;
-      bottom: 24px;
-      left: 35%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 0px;
-      z-index: 6;
-    }
-    .carousel-indicators button {
-      width: 12px;
-      height: 12px;
-      border-radius: 6px;
-      background: rgba(255,255,255,0.6);
-      border: none;
-      transition: all 0.3s ease;
-    }
-    .carousel-indicators .active {
-      width: 8px;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    } */
-
-/* === Carousel Indicators (exact LifeWave style) === */
-
 .carousel-indicators {
   position: absolute;
   bottom: 15px;
@@ -202,14 +203,14 @@ footer {
   color: var(--brand-blue) !important;
   font-weight: 500;
   font-size: 1.12rem;
-  padding: 0 22px !important; /* Controls space between links */
+  padding: 0 22px !important; 
   transition: color 0.2s;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-item.active .nav-link {
-  color: #3574b0 !important; /* Slightly lighter blue on hover/active */
+  color: #3574b0 !important; 
   text-decoration: underline;
 }
 
@@ -220,7 +221,7 @@ footer {
   top: 50%;
   left: 6%;
   transform: translateY(-50%);
-  color: #1661ad; /* dark brand blue */
+  color: #1661ad; 
   z-index: 3;
   max-width: 520px;
 }
@@ -276,7 +277,17 @@ footer {
   color: #fff;
 }
 
+.spacer-48 {
+  height: 48px;
+}
+
 /* ######################################### 2nd page CSS  ############################################ */
+.text-lifewave-blue {
+  color: #4269a5;
+}
+.text-lifewave {
+  color: #4269a5 !important;
+}
 
 .icon-circle {
   width: 80px;
@@ -570,167 +581,6 @@ body {
 /* ##########################  END ##################################### */
 /* ##########################  footer ##################################### */
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
-}
-
-.footer {
-  color: #1a2a57;
-  font-size: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.footer-top {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(to bottom, #f4f8fd 0%, #eaf2fc 100%);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap;
-  padding: 60px 60px 40px;
-  overflow: hidden;
-}
-
-
-
- .footer-top::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width:60%;
-  height: 250px;
-  border-radius: 40%;
-  background-image:
-    radial-gradient(rgba(255, 255, 255, 0.9) 20%, transparent 21%),
-    radial-gradient(rgba(255, 255, 255, 0.9) 20%, transparent 21%),
-    radial-gradient(rgba(255, 255, 255, 0.9) 20%, transparent 21%);
-  background-position:
-    0 0,
-    50px 50px,
-    100px 100px;
-  background-size: 100px 100px;
-  opacity: 0.9;
-  z-index: 0;
-  pointer-events: none;
-  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
-}
-
-
-.footer-logo img {
-  width: 160px;
-  height: auto;
-}
-
-
-.footer-links {
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-}
-
-.footer-links ul {
-  list-style: none;
-  text-align: left;
-}
-
-.footer-links ul li {
-  margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-  text-decoration: none;
-  color: #1a2a57;
-  font-size: 15px;
-  transition: color 0.3s;
-}
-
-.footer-links ul li a:hover {
-  color: #2f58b3;
-}
-
-
-.social {
-  position: relative;
-  z-index: 2;
-}
-
-.social h4 {
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.social-icons a {
-  margin-right: 10px;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-}
-
-
-.footer-bottom {
-  background-color: #2f4a8a;
-  color: white;
-  text-align: center;
-  padding: 6px 20px;
-  font-size: 14px;
-  text-align: left;
-}
-
-.footer-bottom p {
-  
-  font-weight: bold;
-   text-align: left;
-}
-
-.bottom-links {
-  display: flex;
-  
-  flex-wrap: wrap;
-  gap:50px;
-  align-items: center;
-
-}
-.bottom-links p {
-  margin-left: 100px;
-  margin-right: 110px;
-  font-weight: bold;
-   margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1;
-}
-
-.bottom-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: opacity 0.3s;
-}
-
-.bottom-links a:hover {
-  opacity: 0.8;
-} */
 
 /* ------------------------ */
 /* 🌐 BASE STYLES (same as yours) */
