@@ -237,38 +237,6 @@ footer {
   text-decoration: none;
 }
 
-.floating-actions {
-  position: fixed;
-  right: 18px;
-  bottom: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  z-index: 9999;
-}
-.floating-actions .btn-floating {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: none;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 6px 16px rgba(38, 72, 121, 0.12);
-  font-weight: 700;
-}
-.floating-actions .chat {
-  background: #1fa3ff;
-  color: #fff;
-}
-.floating-actions .access {
-  background: #0066cc;
-  color: #fff;
-}
-
-.spacer-48 {
-  height: 48px;
-}
-
 /* ######################################### 2nd page CSS  ############################################ */
 .text-lifewave-blue {
   color: #4269a5;
