@@ -149,11 +149,6 @@ footer {
 .carousel-control-next-custom .arrow {
   transform: rotate(-135deg);
 }
-
-
-
-
-/* === Indicators === */
 .carousel-indicators {
   position: absolute;
   bottom: 15px;
@@ -577,14 +572,6 @@ body {
 .btn:hover {
   background-color: #2c4567;
 }
-
-/* ##########################  END ##################################### */
-/* ##########################  footer ##################################### */
-
-
-/* ------------------------ */
-/* 🌐 BASE STYLES (same as yours) */
-/* ------------------------ */
 
 * {
   margin: 0;
