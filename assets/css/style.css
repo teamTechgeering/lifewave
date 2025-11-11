@@ -124,7 +124,6 @@ footer {
 .carousel-control-next-custom {
   right: 40px;
 }
-
 .carousel-control-custom .arrow {
   width: 28px;
   height: 28px;
@@ -133,7 +132,6 @@ footer {
   display: inline-block;
   opacity: 0.85;
 }
-
 .carousel-control-prev-custom .arrow {
   transform: rotate(45deg);
 }
@@ -558,7 +556,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 /* ----- TOP FOOTER SECTION ----- */
 .footer-top {
   position: relative;
