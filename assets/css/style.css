@@ -5,13 +5,6 @@
   --arrow-border: rgba(0, 60, 120, 0.08);
 }
 
-body {
-  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
-  background: #fff;
-  color: #222;
-}
-
 .top-announcement {
   background: var(--brand-blue);
   color: #fff;
@@ -89,15 +82,6 @@ body {
   background-repeat: no-repeat;
 }
 
-section,
-header,
-footer {
-  margin: 0;
-  padding: 0;
-}
-
-/* === Arrows === */
-
 .carousel-control-custom {
   width: 70px;
   height: 70px;
@@ -139,7 +123,6 @@ footer {
   transform: rotate(-135deg);
 }
 
-/* === Indicators === */
 .carousel-indicators {
   position: absolute;
   bottom: 15px;
@@ -174,7 +157,6 @@ footer {
   background: rgba(255, 255, 255, 0.75);
 }
 
-/* Optional overlay gradient for better text visibility */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -199,8 +181,6 @@ footer {
   color: #3574b0 !important;
   text-decoration: underline;
 }
-
-/* === Content (optional) === */
 
 .hero-content {
   position: absolute;
@@ -235,14 +215,12 @@ footer {
   text-decoration: none;
 }
 
-/* ######################################### 2nd page CSS  ############################################ */
 .text-lifewave-blue {
   color: #4269a5;
 }
 .text-lifewave {
   color: #4269a5 !important;
 }
-
 .icon-circle {
   width: 80px;
   height: 80px;
@@ -258,7 +236,6 @@ footer {
   transition: 0.4s ease;
 }
 
-/* Both images fill the circle */
 .icon-circle img {
   width: 130%;
   height: 130%;
@@ -283,7 +260,6 @@ footer {
   opacity: 1;
 }
 
-/* Extra hover effects */
 .wellness-box:hover .icon-circle {
   background: #1a4f9e;
   box-shadow: 0px 0px 20px rgba(0, 91, 187, 0.4);
@@ -308,9 +284,6 @@ footer {
   background: #0d3c74;
   transform: scale(1.05);
 }
-
-/* ##########################  END ##################################### */
-/* ##########################  3rd ##################################### */
 
 body {
       background: url('assets/images/background.svg') no-repeat center center fixed;
@@ -355,7 +328,7 @@ body {
       font-family: 'Montserrat', Arial, sans-serif;
     }
     .photo-description {
-      font-size: 1.13rem;
+      font-size: 1rem;
       color: #454545;
       font-family: 'Montserrat', Arial, sans-serif;
       line-height: 1.6;
@@ -478,8 +451,6 @@ body {
         margin-bottom: 38px;
       }
     }
-/* ##########################  END ##################################### */
-/* ##########################  4th ##################################### */
 
 body {
             font-family: 'Montserrat', Arial, sans-serif;
@@ -542,9 +513,7 @@ body {
         @media (max-width: 575px) {
             .lw-section-title { font-size: 1.5rem; }
         }
-  /* ##########################  END ##################################### */
-/* ##########################  footer ##################################### */
-
+  
 * {
   margin: 0;
   padding: 0;
@@ -644,14 +613,14 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #0b5394; /* Lifewave blue */
+  background-color: #0b5394; 
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-  background-color: #007bff; /* lighter blue hover */
+  background-color: #007bff; 
 }
 
 .social-icons i {
@@ -674,12 +643,10 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .lifewave-footer .row {
     text-align: center;
-  }
-  
+  }  
 }
 @media (max-width: 992px) {
   .social-icons {
@@ -687,22 +654,18 @@ body {
     flex-wrap: wrap;
   }
 }
-
 @media (max-width: 768px) {
   .footer-bottom-links {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .footer-bottom-links a {
     margin: 5px 0;
   }
-
   .footer-logo {
     margin: 0 auto 20px;
   }
-
   .social-icons a {
     margin: 5px;
   }
