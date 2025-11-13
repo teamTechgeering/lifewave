@@ -246,12 +246,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
 .icon-hover {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 
 .wellness-box:hover .icon-default {
   opacity: 0;
@@ -287,11 +285,7 @@ body {
 
 body {
       background: url('assets/images/background.svg') no-repeat center center fixed;
-      background-size: cover;
       font-family: 'Montserrat', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
     }
     .phototherapy-section {
       margin: 60px auto 0 auto;
@@ -322,7 +316,7 @@ body {
     }
     .photo-subtitle {
       font-size: 1.35rem;
-      font-weight: 600;
+      font-weight: 400;
       color: #35578B;
       margin-bottom: 12px;
       font-family: 'Montserrat', Arial, sans-serif;
@@ -504,7 +498,12 @@ body {
             font-weight: 400;
             font-size: 1.1rem;
             padding: 10px 32px;
-        }
+            transition: background 0.3s; /* optional for smooth effect */
+          }
+          .btn-custom:hover, .btn-custom:focus {
+            background-color: #132f4c;
+            color: #fff;
+          }
         @media (max-width: 991px) {
             .lw-section-title { font-size: 2rem; }
             .card-custom .card-title { font-size: 1.25rem; }
@@ -512,19 +511,10 @@ body {
         }
         @media (max-width: 575px) {
             .lw-section-title { font-size: 1.5rem; }
-        }
-  
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+        }  
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 .footer-top {
   position: relative;
   z-index: 1;
@@ -532,7 +522,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 60px;
   flex-wrap: wrap;
   padding: 60px 60px 40px;
   overflow: hidden;
@@ -555,7 +544,7 @@ body {
   background-position: 0 0, 50px 50px, 100px 100px;
   background-size: 100px 100px;
   opacity: 0.9;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   -webkit-mask-image: linear-gradient(
@@ -578,26 +567,40 @@ body {
   margin-top: 10px;
 }
 
-.footer-links-list {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
 .footer-links-list li {
   margin-bottom: 18px;
+  margin-top: 25px;
 }
 
 .footer-links-list a {
+  position: relative;
+  display: inline-block;
   color: #002366;
   text-decoration: none;
   font-size: 15px;
   transition: color 0.3s ease;
 }
 
+.footer-links-list a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px; 
+  width: 0;
+  height: 2px;
+  background-color: #0056b3;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
 .footer-links-list a:hover {
   color: #0056b3;
 }
+
+.footer-links-list a:hover::after {
+  width: 100%;
+}
+
 .social-icons {
   display: flex;
   gap: 10px;
@@ -631,18 +634,15 @@ body {
   background-color: #002366;
   font-size: 14px;
 }
-
 .footer-bottom-links a {
   color: #ffffff;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
 }
-
 .footer-bottom-links a:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 992px) {
   .lifewave-footer .row {
     text-align: center;
@@ -670,3 +670,6 @@ body {
     margin: 5px;
   }
 }
+
+
+
