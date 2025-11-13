@@ -191,9 +191,11 @@ body {
   z-index: 3;
   max-width: 520px;
 }
+
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
+  padding-left: 120px;
   margin-bottom: 22px;
   color: #1661ad;
   letter-spacing: 1px;
@@ -206,13 +208,14 @@ body {
   margin-left: 120px;
 }
 .hero-content .btn {
-  background: #1661ad;
+  background: #1661ad;  
   color: #fff;
   border-radius: 30px;
   padding: 16px 40px;
   font-weight: 600;
   font-size: 1.15rem;
   text-decoration: none;
+  margin-left: 120px;
 }
 
 .text-lifewave-blue {
