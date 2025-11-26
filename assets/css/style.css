@@ -102,18 +102,153 @@ h6 {
   color: #3574b0 !important;
   text-decoration: underline;
 }
+
+/* --- MEGA MENU --- */
+
+.mega-parent { position: static; }
+
+/* FORCE BOOTSTRAP TO STOP REPOSITIONING */
+.mega-menu {
+  position: absolute !important;
+  inset: unset !important;
+
+  width: 880px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 12px);
+
+  border-radius: 12px;
+  display: none;
+  padding: 26px 28px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+  z-index: 2000;
+}
+
+.mega-parent:hover .mega-menu,
+.mega-menu:hover {
+  display: block !important;
+}
+
+/* Titles */
+.mega-title {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+
+/* Links */
+.mega-links { list-style: none; padding: 0; }
+.mega-links li { margin: 6px 0; }
+.mega-links a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #0a3c6e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mega-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;            /* underline starts from the LEFT */
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0a3c6e;
+  transition: width 0.35s ease;   /* smooth animation */
+}
+
+.mega-links a:hover {
+  color: #3574b0;
+}
+
+.mega-links a:hover::after {
+  width: 100%;        /* grows left → right */
+}
+
+.mega-image {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.bundle-text {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.mega-underline {
+  position: relative;
+  display: inline-block;
+  color: #0a3c6e;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.mega-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* underline starts from left */
+  width: 0;
+  height: 2px;
+  background-color: #0a3c6e;
+  transition: width 0.35s ease;
+}
+
+.mega-underline:hover {
+  color: #3574b0;
+}
+
+.mega-underline:hover::after {
+  width: 100%; /* grows left → right */
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .mega-menu {
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    position: static !important;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+
+  /* Disable hover on mobile */
+  .mega-parent:hover .mega-menu {
+    display: none !important;
+
+
+  }
+}
+
+
 .hero-carousel {
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
-  padding: 0;
+  margin-bottom: 60px;
+  padding: 0px;
 }
 
 .hero-carousel .carousel-inner,
 .hero-carousel .carousel-item {
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
 }
 
 .carousel-item {
@@ -201,7 +336,7 @@ h6 {
 .hero-content {
   position: absolute;
   top: 50%;
-  left: 6%;
+  left: 16%;
   transform: translateY(-50%);
   z-index: 3;
   max-width: 540px;
@@ -675,3 +810,4 @@ h6 {
     margin: 5px;
   }
 }
+
